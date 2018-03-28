@@ -1,0 +1,16 @@
+<header class="header">
+    <ul>
+        <% topMenu.forEach(function(m) { %>
+            <li class="top-links" data-link-id = "<%= m.linkToId %>">
+                <a href="javascript:void(0)">
+                    <%= m.name %>
+                </a>
+            </li>
+        <% }); %>
+    </ul>
+</header>
+
+<div class="top-banner covered">
+    <h1 class="heading">Suman Barick</h1>
+    <i class="fas fa-angle-double-down go-down"></i>
+</div>

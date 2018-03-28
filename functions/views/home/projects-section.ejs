@@ -1,0 +1,83 @@
+<div id="project-section">
+
+    <h2 class="col-xs-12 col-sm-12 col-md-12">
+        Personal projects
+    </h2>
+
+    <% listItems.forEach(function(li) { %>
+    <div class="col-xs-12 col-sm-4 col-md-3 lib-card-container">
+        <div class="list-card">
+            <div class="title"><%= li.name %></div>
+            <img class="img" alt="<%= li.name %> image" src="<%= li.img %>" />
+            <div class="desc">
+                <div class="tags">
+                    <% li.tags.forEach(function(tag) { %>
+                    <span class="tag">
+                        <%= tag %>
+                    </span>
+                    <% }); %>
+                </div>
+                <p>
+                    <%= li.desc %>
+                </p>
+            </div>
+
+            <div class="button-pane">
+                <!-- Button Text -->
+                <span class="text">
+                    <% if (li.playUrl) { %>  Play <% } %>
+                    <% if (li.webUrl) { %>  Visit <% } %>
+                    <% if (li.githubUrl) { %>  Fork it <% } %>
+                    <% if (li.playStoreUrl || li.windowsStoreUrl || li.amazonUrl) { %>  Get it <% } %>
+                </span>
+                
+
+                <i class="far fa-hand-point-right click-there"></i>
+
+                <!-- Play Button for Games --> 
+                <% if (li.playUrl) { %>
+                <a class="button play-btn" href="<%= li.playUrl %>" target="_blank">
+                    <span class="fas fa-gamepad icon"></span>
+                </a>
+                <% } %>
+
+                <!-- Visit Button for Websites --> 
+                <% if (li.webUrl) { %>     
+                <a class="button web-btn" href="<%= li.webUrl %>" target="_blank">
+                    <span class="fas fa-globe icon"></span>
+                </a>
+                <% } %>
+                
+                <!-- Github Button for Forking -->
+                <% if (li.githubUrl) { %>
+                <a class="button web-btn" href="<%= li.githubUrl %>" target="_blank">
+                    <span class="fab fa-github icon"></span>
+                </a>
+                <% } %>
+
+                <!-- Amazon Button --> 
+                <% if (li.amazonUrl) { %>            
+                <a class="button amazon-btn" href="<%= li.amazonUrl %>" target="_blank">
+                    <span class="fab fa-amazon icon"></span>
+                </a>
+                <% } %>
+                            
+                <!-- Windows Store Button -->
+                <% if (li.windowsStoreUrl) { %>             
+                <a class="button wp-btn" href="<%= li.windowsStoreUrl %>" target="_blank">
+                    <span class="fab fa-windows icon"></span>
+                </a>
+                <% } %>
+
+                <!-- Android Play Store Button -->
+                <% if (li.playStoreUrl) { %>             
+                <a class="button playstore-btn" href="<%= li.playStoreUrl %>" target="_blank">
+                    <span class="fab fa-android icon"></span>
+                </a>
+                <% } %>
+
+            </div>                
+        </div>
+    </div>
+    <% }); %>
+</div>

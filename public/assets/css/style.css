@@ -1,0 +1,174 @@
+ul {
+    padding: 0;
+    margin: 0;
+}
+.top-banner {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    height: 300px;
+    background: #505cfd;
+    background: linear-gradient(to left, #00dbde, #505cfd);
+    transition: height 1s;
+    z-index: 9;
+    text-align: center;
+}
+.top-banner.covered {
+    height: 100%;
+}
+.top-banner .heading {
+    /*font-family: 'Molle-Regular', cursive;*/
+    position: absolute;
+    font-family: 'Great Vibes', cursive;
+    font-size: 80px;
+    text-align: center;    
+    color: #090e5f;
+    transition: top 1s linear;
+    top: 70px;
+    left: 0;
+    right: 0;
+}
+.top-banner.covered .heading {
+    top: 200px;
+}
+.top-banner .go-down {
+    position: absolute;
+    bottom: 60px;
+    font-size: 40px;
+    color: #d7d8e4;
+    cursor: pointer;
+}
+.top-banner .go-down:hover {
+    color: #fff;
+}
+.body-container {
+    margin-top: 350px;
+    margin-bottom: : 100px;
+    position: relative;
+    padding: 0;
+    background: #fff;
+}
+.header {
+    height: 50px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background: #505cfd;
+    background: linear-gradient(to left, #00dbde, #505cfd);
+}
+.header ul {
+    list-style: none;
+    display: inline-block;
+}
+.header ul li {
+    display: inline-block;
+    position: relative;  
+}
+.header ul li a {
+    color: #fff;
+    padding: 15px;
+    display: inline-block;  
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.header ul li a:hover,
+.header ul li a:active {
+    color: rgba(255, 255, 255, .7);
+}
+.header ul li a::after {
+    position: absolute;
+    background: rgba(255, 255, 255, .8);
+    display: block;
+    height: 1px;
+    width: 20px;
+    bottom: -1px;
+    left: 50%;
+    margin-left: -10px;
+    content: "";
+    transition: all .3s ease-out;
+}
+.header ul li a:hover::after {
+    background: #fff;
+    margin-left: 0;
+    width: 100%;
+    left: 0;
+}
+.lib-card-container {
+    background: #fff;
+}
+.list-card {
+    border-bottom: 1px solid steelblue;
+    padding: 10px 15px 20px;
+    height: 375px;
+    overflow: auto;
+    position: relative;
+    overflow: hidden;
+}
+.list-card .title {
+    font-size: 22px;
+    font-weight: bold;
+}
+.list-card .img {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-top: 10px;
+    max-height: 175px;
+}
+.list-card .desc {
+    font-size: 16px;
+    margin-top: 10px;
+}
+.list-card .tags {
+    margin-top: 10px;
+}
+.list-card .tags .tag {
+    display: inline-block;
+    padding: 2px 5px;
+    margin: 1px 3px;
+    background: steelblue;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 3px;
+}
+.list-card .button-pane {
+    background: #00dbde;   
+    background: linear-gradient(to left, #00dbde, #505cfd);
+    height: 40px;
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    right: 0;
+    color: #fff;
+    font-size: 20px;
+}
+.list-card .button-pane .button {
+    float: right;
+    display: inline-block;
+    height: 100%;
+    margin-left: 2px;
+}
+.list-card .button-pane .icon {
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.list-card .button-pane .text {
+    display: inline-block;
+    text-align: center;
+    padding: 5px 2px 5px 10px;
+}
+
+.list-card .button-pane .click-there {
+    font-size: 18px;
+}
+#project-section {
+    padding-top: 50px;
+}
