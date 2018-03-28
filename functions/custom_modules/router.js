@@ -38,14 +38,14 @@ function getHompageData () {
             {
                 name: "CXGF",
                 desc: "Codotronix Game Framework - A simple framework for browser based games",
-                tags: ["JavaScript", "CSS", "HTML", "Game", "CXGF - Codotronix Game Framework"],
+                tags: ["JavaScript", "CSS", "HTML", "Game", "CXGF"],
                 img: "assets/img/cxgf/cxgf-1.png",
                 webUrl: "http://codotronix.github.io/cxgf"
             },
             {
                 name: "Beware of Boxes",
                 desc: "Demo game created with my game framework CXGF",
-                tags: ["HTML", "CSS", "JavaScript", "CXGF - Codotronix Game Framework", "Game"],
+                tags: ["HTML", "CSS", "JavaScript", "CXGF", "Game"],
                 img: "assets/img/bob/bob-1.png",
                 playUrl: "http://codotronix.github.io/bob"
             },
@@ -99,13 +99,6 @@ function getHompageData () {
                 tags: ["AngularJS", "HTML", "CSS", "JavaScript", "website"],
                 img: "assets/img/bengali-recipes/bengali-recipes.png",
                 webUrl: "http://codotronix.github.io/bengali-recipes"
-            },        
-            {
-                name: "Web 4",
-                desc: "A simple browser based game where the player needs to shoot down all the asteroids to save the day",
-                tags: ["HTML", "CSS", "JavaScript", "Game"],
-                img: "assets/img/tankgular/tankgular.png",
-                url: ""
             }
         ]
     };

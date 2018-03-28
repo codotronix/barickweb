@@ -1,3 +1,6 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
 ul {
     padding: 0;
     margin: 0;
@@ -44,7 +47,7 @@ ul {
 }
 .body-container {
     margin-top: 350px;
-    margin-bottom: : 100px;
+    margin-bottom: 30px;
     position: relative;
     padding: 0;
     background: #fff;
@@ -99,8 +102,13 @@ ul {
     width: 100%;
     left: 0;
 }
+.section-heading {
+    text-align: center;
+    padding: 40px 20px 30px;
+}
 .lib-card-container {
     background: #fff;
+    margin-bottom: 30px;
 }
 .list-card {
     border-bottom: 1px solid steelblue;
@@ -118,7 +126,7 @@ ul {
     width: 100%;
     border: 1px solid #ccc;
     padding: 5px;
-    margin-top: 10px;
+    margin-top: 15px;
     max-height: 175px;
 }
 .list-card .desc {
@@ -126,7 +134,7 @@ ul {
     margin-top: 10px;
 }
 .list-card .tags {
-    margin-top: 10px;
+    margin: 10px 0;
 }
 .list-card .tags .tag {
     display: inline-block;
